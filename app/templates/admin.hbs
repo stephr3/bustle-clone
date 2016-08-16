@@ -1,0 +1,6 @@
+<h1>Administrative Page</h1>
+<ul>
+  {{#each model as |story|}}
+    <li><span class="glyphicon glyphicon-trash" {{action 'delete' story}}></span>{{story.title}}</li>
+  {{/each}}
+</ul>
