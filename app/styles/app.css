@@ -13,3 +13,17 @@
 img {
   max-width: 40%;
 }
+
+.author-style{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: solid 5px black;
+}
+
+.tiny-img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: solid 1px black;
+}

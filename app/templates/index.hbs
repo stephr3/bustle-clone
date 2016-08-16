@@ -1,6 +1,7 @@
 <ul>
   {{#each model as |story|}}
     <li>
+      {{#link-to 'story' story.id}}
       <ul>
         <li>{{story.title}}</li>
         <li><img src= {{story.photo}}></li>
@@ -8,6 +9,7 @@
         <li>{{story.tag}}</li>
         <li>{{story.timeAgo}}</li>
       </ul>
+      {{/link-to}}
     </li>
   {{/each}}
 </ul>
