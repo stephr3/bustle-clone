@@ -1,0 +1,15 @@
+.hero-unit {
+  background-image:url('http://66.media.tumblr.com/ee16a7fb46958d544e3e113bfbe3b5e7/tumblr_nn016pe4pv1r6x3d2o1_1280.jpg');
+  background-size:cover;
+  background-color: #EEEEEE;
+  height:300px;
+}
+.navbar {
+  margin-top: 300px;
+}
+.container {
+  margin-top: 75px;
+}
+img {
+  max-width: 40%;
+}
