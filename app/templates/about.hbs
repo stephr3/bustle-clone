@@ -1,1 +1,11 @@
-{{outlet}}
+<h1>Contributors</h1>
+<ul>
+  {{#each model as |author|}}
+    <li>
+      <ul>
+        <li>{{author.name}}</li>
+        <li><img src= {{author.authorPicture}}></li>
+      </ul>
+    </li>
+  {{/each}}
+</ul>
