@@ -1,0 +1,13 @@
+<ul>
+  {{#each model as |story|}}
+    <li>
+      <ul>
+        <li>{{story.title}}</li>
+        <li><img src= {{story.photo}}></li>
+        <li>{{story.author}}</li>
+        <li>{{story.tag}}</li>
+        <li>{{story.timeAgo}}</li>
+      </ul>
+    </li>
+  {{/each}}
+</ul>
