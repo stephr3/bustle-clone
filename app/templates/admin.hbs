@@ -1,7 +1,8 @@
 <h1>Administrative Page</h1>
+<hr>
 <ul>
   {{#each model as |story|}}
-    <li><span class="glyphicon glyphicon-trash" {{action 'delete' story}}>&nbsp;</span>{{story.title}}&nbsp;{{#link-to 'update' story.id}}<span class ="glyphicon glyphicon-pencil"></span>{{/link-to}}</li>
+    <li><span class="glyphicon glyphicon-trash" {{action 'delete' story}}> </span>{{#link-to 'update' story.id}}<span class ="glyphicon glyphicon-pencil"></span>{{/link-to}}&nbsp;{{story.title}}</li>
   {{/each}}
 </ul>
 {{new-story save="save"}}
