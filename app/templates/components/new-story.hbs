@@ -1,0 +1,41 @@
+<h1>New Story</h1>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="title">Title</label>
+      {{input value=title id="title"}}
+    </div>
+
+    <div class="form-group">
+      <label for="author">Author</label>
+      {{input value=author id="author"}}
+    </div>
+
+    <div class="form-group">
+      <label for="authorImg">Author Image URL</label>
+      {{input value=authorImg id="authorImg"}}
+    </div>
+
+    <div class="form-group">
+      <label for="timeAgo">Date and Time of Article</label>
+      {{bootstrap-datepicker value=timeAgo id="timeAgo"}}
+    </div>
+
+    <div class="form-group">
+      <label for="photo">Story Image URL</label>
+      {{input value=photo id="photo"}}
+    </div>
+
+    <div class="form-group">
+      <label for="tag">Tag the Story</label>
+      {{input value=tag id="tag"}}
+    </div>
+
+    <div class="form-group">
+      <label for="text">The Story Text</label>
+      {{textarea value=text cols='80' rows="6" id="text"}}
+    </div>
+
+    <button {{action 'save'}}>Save</button>
+  </form>
+</div>

@@ -4,7 +4,7 @@
   background-color: #EEEEEE;
   height:300px;
 }
-.container {
+.main-content {
   margin-top: 375px;
 }
 img {
@@ -23,4 +23,8 @@ img {
   width: 50px;
   height: 50px;
   border: solid 1px black;
+}
+
+ul {
+  list-style: none;
 }

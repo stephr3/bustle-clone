@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('about');
   this.route('story', {path: '/story/:story_id'});
   this.route('admin');
+  this.route('update', {path: '/edit/:story_id'});
 });
 
 export default Router;
