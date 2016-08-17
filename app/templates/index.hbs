@@ -39,20 +39,15 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-<div class="row">
-  {{#each model as |story|}}
-    <div class="container index-story">
-      <div class="col-md-6">
-        <ul>
-          {{#link-to 'story' story.id}}
-          <li><img src= {{story.photo}}></li>
-          {{/link-to}}
-          <li class="title">{{story.title}}</li>
-          <hr>
-          <li class="pull-left sub-header">{{story.author}}</li>
-          <li class="pull-right sub-header">{{story.timeAgo}}</li>
-        </ul>
-      </div>
-    </div>
-  {{/each}}
-</div>
+{{#each model as |story|}}
+  <div class="index-story">
+    <ul>
+      {{#link-to 'story' story.id}}
+      <li><img src= {{story.photo}}></li>
+      {{/link-to}}
+      <li class="title">{{story.title}}</li>
+      <hr>
+      <li class="sub-header">{{story.author}} | {{story.timeAgo}}</li>
+    </ul>
+  </div>
+{{/each}}

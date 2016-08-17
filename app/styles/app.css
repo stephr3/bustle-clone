@@ -10,7 +10,7 @@
 img {
   max-width: 50%;
   display: block;
-  margin: auto;
+  margin: 20px auto;
 }
 
 .author-style{
@@ -18,6 +18,7 @@ img {
   width: 150px;
   height: 150px;
   border: solid 5px black;
+  margin-left: 0px;
 }
 
 .tiny-img {
@@ -47,11 +48,13 @@ ul {
   font-size: 25px;
 }
 .index-story {
-  margin-top: 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 .sub-header {
   color: lightgray;
   font-size: 15px;
+  margin-bottom: 10px;
 }
 .highlight {
   background-color: lightblue;
@@ -62,4 +65,12 @@ ul {
 }
 .tag {
   font-weight: bold;
+}
+.new-form {
+  background-color: lightgray;
+  border-radius: 5px;
+  padding: 10px;
+}
+.textarea-group {
+  vertical-align: middle;
 }
