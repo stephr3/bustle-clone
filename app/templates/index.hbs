@@ -39,8 +39,8 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-{{#each model as |story|}}
-  <div class="index-story">
+{{#each model as |story| }}
+  <div class="index-story col-md-6">
     <ul>
       {{#link-to 'story' story.id}}
       <li><img src= {{story.photo}}></li>
