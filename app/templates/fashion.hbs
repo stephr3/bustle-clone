@@ -1,0 +1,12 @@
+{{#each model as |story|}}
+  <div class="index-story">
+    <ul>
+      {{#link-to 'story' story.id}}
+      <li><img src= {{story.photo}}></li>
+      {{/link-to}}
+      <li class="title">{{story.title}}</li>
+      <hr>
+      <li class="sub-header">{{story.author}} | {{story.timeAgo}}</li>
+    </ul>
+  </div>
+{{/each}}
